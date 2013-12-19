@@ -2,9 +2,11 @@ function add_option() {
 	var oldwrd = document.getElementById("oldwrd");
 	var newwrd = document.getElementById("newwrd");
 	
+	// If there is text in both fields
 	if(oldwrd.value != "" && newwrd.value != "") {
 		localStorage[oldwrd.value] = newwrd.value;
-
+	
+		// Resets fields
 		oldwrd.value = "";
 		newwrd.value = "";
 		restore_options();
@@ -12,23 +14,25 @@ function add_option() {
 }
 
 function remove_option() {
-	var btn = document.getElementById("del");
+	var delwrd = document.getElementById("del");
 	
-	if (btn.value != "") {
-		localStorage.removeItem(btn.value)
+	// If there is text in the field
+	if (delwrd.value != "") {
+		localStorage.removeItem(delwrd.value)
 		
-		btn.value = "";
+		// Resets field
+		delwrd.value = "";
 		restore_options();
 	}
 }
 
 function restore_options() {
-	var existingWrds = "";
+	// Creates list of words on options page
+	var wrdlst = "";
 	for(i in localStorage) {
-		existingWrds += "'" + i + "' - '" + localStorage[i] + "'<br>";
+		wrdlst += "'" + i + "' - '" + localStorage[i] + "'<br>";
 	}
-	var wrdList = document.getElementById("storage");
-	wrdList.innerHTML = existingWrds;
+	document.getElementById("storage").innerHTML = wrdlst;
 }
 
 document.addEventListener('DOMContentLoaded', restore_options);
