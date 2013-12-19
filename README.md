@@ -11,17 +11,17 @@ Downlaod this repositry from the `Download ZIP` button on the right. Unzip it an
 ###Adding words
 To add a word to the list, just put the word to replace in first, then the word to replace it with. For example, to turn `Pope` to `Pimp` just input them into the respective boxes, click `Add`, then refresh any pages.
 
-Please note that all entries are case sensitive, so `Cat` is not the same as `cat`. Also it will replace words even if they are part of a larger word. For instance the rule `work - twerk` will still change `working` to `twerking`. If you want to prevent this, add spaces before and after your word.
+Please note that all entries are case sensitive, so `Cat` is not the same as `cat`. Also it will replace words even if they are part of a larger word. For instance the rule `'work' - 'twerk'` will still change `working` to `twerking`. If you want to prevent this, add spaces before and after your word.
 
 ###Deleting words
 To remove a word, first look in the list. For our example lets say it looks like the following.
 ```
-Pope - Pimp
-Car - Cat
-Space - Spaaaaaaaace
+'Pope' - 'Pimp'
+'Car' - 'Cat'
+'Space' - 'Spaaaaaaaace'
 ```
-To delete a conversion, type the original word in the box and press `Delete word`. If we input `Pope`, our list will now look like this:
+To delete a conversion, type the original word in the box and press `Delete`. If we input `Pope`, our list will now look like this:
 ```
-Car - Cat
-Space - Spaaaaaaaace
+'Car' - 'Cat'
+'Space' - 'Spaaaaaaaace'
 ```
