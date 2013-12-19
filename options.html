@@ -1,21 +1,18 @@
 <html>
 	<head>
-		<title>Word Replacer options</title>
+		<title>textReplace options</title>
 	</head>
 	<body>
-		Word to replace:
-		<input id="oldwrd" value=""></input><br>
-		New word:
-		<input id="newwrd" value=""></input><br>
+		<input id="oldwrd" size="30" placeholder="Enter a word to replace" />
+		<input id="newwrd" size="30" placeholder="Enter a word to replace it with" />
 		<button id="add">Add</button>
+		<div id="status"></div>
 		<hr>
-		Word sets: <br>
-		Word to remove:
-		<input id="del" value=""></input>
-		<button id="delGo">Delete word</button><br>
+		Word sets:<br>
 		<div id="storage"></div>
 		<hr>
-		<div id="status"></div>
+		<input id="del" size="40" placeholder="Enter the first word of a pair to remove them" />
+		<button id="delGo">Delete</button><br>
 	</body>
 	<script src="options.js"></script>
 </html>
